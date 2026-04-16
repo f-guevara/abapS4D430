@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition for Employees'
+define service ZFG100_UI_EMPLOYEE {
+  expose ZFG100_R_EMPLOYEE   as Employee;
+  expose ZFG100_R_DEPARTMENT as Department;
+}

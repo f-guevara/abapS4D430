@@ -1,0 +1,9 @@
+@EndUserText.label: 'Access Control for ZFG100_R_EMPLOYEE'
+@MappingRole: true
+define role ZFG100_EMPLOYEE_ACL {
+    grant 
+        select 
+            on ZFG100_R_EMPLOYEE
+                where 
+                    DepartmentId = 'ADMIN'; -- Only show rows where Dept is ADMIN
+}
